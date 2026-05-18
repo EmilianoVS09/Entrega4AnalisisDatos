@@ -486,7 +486,7 @@
       <button class="nav-tab" data-page="ej4" onclick="showPage('ej4')">🛍 Ejercicio 4</button>
       <button class="nav-tab" data-page="comp" onclick="showPage('comp')">⚖ Comparativa y Cierre</button>
     </div>
-    <div style="font-size:.72rem;color:var(--muted)">Equipo 7 · 2026-1</div>
+    <div style="font-size:.72rem;color:var(--muted)">Equipos 7 · 2026-1</div>
   </nav>
 
   <div id="page-home" class="page active">
@@ -641,6 +641,30 @@
             ⏱ 0:45 – 2:15 · 1 min 30 seg</div>
         </div>
 
+        <div class="frases-box"
+          style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
+          <div
+            style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
+            💬 Frases clave para hablar</div>
+          <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
+            <li style="margin-bottom:.5rem;line-height:1.55;">🔵 <strong>El dataset tiene 569 muestras y 30 variables
+                numéricas</strong> que describen características del núcleo celular: radio, textura, perímetro, área,
+              concavidad.</li>
+            <li style="margin-bottom:.5rem;line-height:1.55;">🔵 <strong>La clase Benigna representa el 62.7% (357
+                casos) y la Maligna el 37.3% (212 casos).</strong> Hay un desbalance moderado de 1.7 a 1 — suficiente
+              para que la accuracy no sea la única métrica confiable.</li>
+            <li style="margin-bottom:.5rem;line-height:1.55;">🔵 <strong>Las variables '_worst' son las más
+                discriminativas.</strong> Concave_points_worst y perimeter_worst tienen correlaciones mayores a 0.75 con
+              el diagnóstico maligno.</li>
+            <li style="margin-bottom:.5rem;line-height:1.55;">🔵 <strong>Hay multicolinealidad severa:</strong> radio,
+              perímetro y área están casi perfectamente correlacionados (r > 0.99) porque los tres miden el tamaño. Esto
+              importa para la Regresión Logística.</li>
+            <li style="margin-bottom:.5rem;line-height:1.55;">🔵 <strong>Detectamos outliers en area_se (~11%), pero no
+                los eliminamos</strong> porque en oncología los valores extremos son presentaciones clínicas reales, no
+              errores de medición.</li>
+          </ul>
+        </div>
+
         <div class="grid-2">
           <div class="chart-box">
             <div class="chart-header">
@@ -730,12 +754,11 @@
             ⏱ 2:15 – 4:15 · 2 min</div>
         </div>
 
-
         <div class="frases-box"
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🔵 <strong>Tres pasos:</strong> (1) Eliminar columnas 'id'
               y 'Unnamed_32', (2) codificar M=1/B=0, (3) split 80/20 estratificado.</li>
@@ -751,7 +774,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🟡 <strong>Regresión Logística:</strong> baseline natural
               para clasificación binaria. El pairplot mostró que las clases son casi linealmente separables. Sus
@@ -839,7 +862,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🔴 <strong>Los 3 Falsos Negativos son el error más
                 grave:</strong> 3 tumores malignos clasificados como benignos = 3 pacientes sin tratamiento. En
@@ -901,7 +924,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🔵 <strong>¿Qué es PCA?</strong> Transforma 30 variables
               correlacionadas en nuevas variables (componentes principales) ordenadas de mayor a menor varianza
@@ -972,11 +995,12 @@
             ⏱ 5:00 – 5:30 · 30 seg</div>
         </div>
 
+
         <div class="frases-box"
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">✅ <strong>SVM y Random Forest son los modelos
                 recomendados</strong> con accuracy del 97.4% y precisión perfecta para detectar malignos (sin falsos
@@ -996,7 +1020,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#E5484D;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🔴 <strong>Este modelo NO es un diagnóstico
                 definitivo,</strong> es una herramienta de apoyo al especialista. La decisión clínica final siempre debe
@@ -1070,7 +1094,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Este ejercicio es fundamentalmente diferente al
                 anterior:</strong> no hay variable objetivo. Nadie etiquetó a los 200 clientes. Usamos ML para descubrir
@@ -1151,7 +1175,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>K-Means particiona los datos minimizando la
                 distancia al centroide más cercano.</strong> Es el algoritmo más rápido y escalable, ideal para datos
@@ -1241,7 +1265,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>DBSCAN es radicalmente diferente a
                 K-Means:</strong> no minimiza distancias al centroide — agrupa puntos que estén en zonas de ALTA
@@ -1305,12 +1329,11 @@
             ⏱ 8:30 – 9:00 · 30 seg</div>
         </div>
 
-
         <div class="frases-box"
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>El clustering jerárquico construye un árbol de
                 fusiones</strong> — empieza con 200 clusters (uno por cliente) y los va fusionando hasta tener 1. El
@@ -1375,7 +1398,7 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
             <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>PCA sobre las 4 variables del dataset:</strong>
               PC1 explica 33.7% de la varianza, PC2 el 26.2% — en total 59.9%. Es suficiente para una visualización de
@@ -1500,26 +1523,27 @@
           style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
           <div
             style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#4C9AFF;text-transform:uppercase;margin-bottom:.7rem;">
-            💬 Importante</div>
+            💬 Frases clave para hablar</div>
           <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
-            <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 1 — Impulsivos Maduros (Ingreso bajo,
-                Gasto alto, edad≈55):</strong> Gastan más de lo que su ingreso sugeriría. Probablemente priorizan el
-              mall como entretenimiento. Estrategia: programas de fidelización, cuotas sin intereses, ofertas de
-              temporada.</li>
+            <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 1 — Promedio / Masivo (81 clientes — el
+                más grande, Ingreso medio ≈ 55k, Gasto medio ≈ 49, edad ≈ 43):</strong> El volumen del negocio.
+              Comportamiento equilibrado, sin extremos. Estrategia: cross-selling, productos de gama media, campañas de
+              volumen y descuentos por cantidad.</li>
             <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 2 — VIP — el más valioso (Ingreso alto,
                 Gasto alto, edad≈33):</strong> Los clientes objetivo de cualquier mall. Jóvenes con poder adquisitivo y
               disposición a gastar. Estrategia: membresías premium, experiencias exclusivas, acceso anticipado a nuevos
               productos.</li>
-            <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 3 — Masivo/Promedio (81 clientes — el
-                más grande, edad≈43):</strong> Comportamiento equilibrado. Son el volumen del negocio, no el margen.
-              Estrategia: cross-selling, productos de gama media, campañas de volumen y descuentos por cantidad.</li>
+            <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 3 — Impulsivos Jóvenes (22 clientes,
+                Ingreso bajo ≈ 26k, Gasto alto ≈ 79, edad ≈ 25):</strong> Gastan mucho más de lo que su ingreso sugiere.
+              Probablemente priorizan el mall como entretenimiento. Estrategia: programas de fidelización, cuotas sin
+              intereses, ofertas de temporada.</li>
             <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 4 — Conservadores Pudientes (Ingreso
                 alto, Gasto bajo):</strong> Tienen capacidad económica pero no la ejercen aquí. Probablemente gastan en
               otros canales (online, tiendas de lujo). Estrategia: experiencias de lujo y exclusividad para captarlos.
             </li>
-            <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 5 — Precavidos Jóvenes (Ingreso bajo,
-                Gasto bajo, edad≈25):</strong> Presupuesto limitado y comportamiento cauteloso. Estrategia: descuentos,
-              cupones, programa de puntos y opciones de bajo costo.</li>
+            <li style="margin-bottom:.5rem;line-height:1.55;">🟢 <strong>Cluster 5 — Precavidos Maduros (23 clientes,
+                Ingreso bajo ≈ 26k, Gasto bajo ≈ 21, edad ≈ 45):</strong> Presupuesto limitado y comportamiento
+              cauteloso. Estrategia: descuentos, cupones, programa de puntos y opciones de bajo costo.</li>
           </ul>
         </div>
 
@@ -1581,12 +1605,11 @@
           style="background:rgba(255,255,255,0.07);border:1px solid #334155;border-radius:8px;padding:.3rem .8rem;font-size:.8rem;color:#94A3B8;">
           ⏱ 10:30 – 11:30 · 1 min</div>
       </div>
-
       <div class="frases-box"
         style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
         <div
           style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#F59E0B;text-transform:uppercase;margin-bottom:.7rem;">
-          💬 Importante</div>
+          💬 Frases clave para hablar</div>
         <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
           <li style="margin-bottom:.5rem;line-height:1.55;">🟡 <strong>Diferencia fundamental:</strong> en clasificación
             el modelo aprende de etiquetas históricas para predecir etiquetas futuras. En clustering el modelo descubre
@@ -1667,7 +1690,7 @@
         style="background:rgba(76,154,255,0.06);border:1px solid rgba(76,154,255,0.2);border-radius:10px;padding:1.1rem 1.4rem;margin-bottom:1.2rem;">
         <div
           style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#E5484D;text-transform:uppercase;margin-bottom:.7rem;">
-          💬 Importante</div>
+          💬 Frases clave para hablar</div>
         <ul style="list-style:none;padding:0;margin:0;font-size:.875rem;color:#CBD5E1;">
           <li style="margin-bottom:.5rem;line-height:1.55;">📌 <strong>Lección 1 — El EDA no es un trámite:</strong> la
             multicolinealidad en Ej2 nos indicó que debíamos evitar modelos lineales sin regularización. La correlación
@@ -1689,7 +1712,7 @@
           <strong>Ejercicio 2:</strong> Herramienta de apoyo, no diagnóstico autónomo. Ajuste de umbral para maximizar
           Recall. Sesgo de generalización (dataset 1990s, EE.UU.).<br><br>
           <strong>Ejercicio 4:</strong> Los segmentos deben usarse para personalizar la experiencia, no para discriminar
-          o excluir clientes. Un Cluster "Precavidos Jóvenes" de bajo gasto no es un cliente de menor valor — puede ser
+          o excluir clientes. Un Cluster "Precavidos Maduros" de bajo gasto no es un cliente de menor valor — puede ser
           el cliente fidelizable del futuro.
         </div>
       </div>
@@ -1698,8 +1721,7 @@
         <div class="insight-title">Repositorio GitHub</div>
         <div class="insight-text">Todo el código, los notebooks ejecutados y el guion están en la carpeta
           <strong>evaluacion_4</strong> del repositorio. Muesten el repositorio al inicio y al final del video. El
-          README.md debe describir brevemente cada archivo.
-        </div>
+          README.md debe describir brevemente cada archivo.</div>
       </div>
     </div>
   </div>
